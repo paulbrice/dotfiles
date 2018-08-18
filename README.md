@@ -107,7 +107,11 @@ git config --global color.diff.whitespace "red reverse"
 
 Create directory structure: `mkdir -p ~/develop/go-workspace/{pkg,src,bin}`
 
+### Install Vagrant Plugins
 
+```
+vagrant plugin install vagrant-aws
+```
 ### Install ChefDK
 
 [https://downloads.chef.io/chefdk](https://downloads.chef.io/chefdk)
