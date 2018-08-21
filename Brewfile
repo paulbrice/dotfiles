@@ -5,7 +5,6 @@ tap "homebrew/bundle"
 
 brew "awscli"
 brew "aws-shell"
-cask "atom"
 brew "bash"
 brew "bash-completion"
 brew "diff-so-fancy"
