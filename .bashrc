@@ -4,7 +4,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 #Setup: GoLang environment
-export GOPATH=$HOME/develop/go-workspace
+export GOPATH=$HOME/code/go-workspace
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
 
@@ -23,14 +23,6 @@ if [ -f /usr/local/bin/docker ]; then
     fi
   fi
 fi
-
-## CB Setup: pyenv
-export PYENV_ROOT="$HOME/Desktop/Reno/pyenv"
-export TMPDIR="$HOME/Desktop/Reno/tmp"
-
-## CB Setup: homebrew
-export HOMEBREW_CACHE="${HOME}/Desktop/Reno/homebrew/cache"
-export HOMEBREW_TEMP="${HOME}/Desktop/Reno/homebrew/temp"
 
 ## Setup: pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
