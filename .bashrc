@@ -1,9 +1,14 @@
-## Setup: bash completion
+## setup: history
+HISTSIZE=5000
+HISTFILESIZE=10000
+shopt -s histappend
+
+## setup: bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-#Setup: GoLang environment
+## setup: GoLang environment
 export GOPATH=$HOME/code/go-workspace
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
@@ -13,7 +18,7 @@ if [ -f /usr/local/bin/rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
-## Setup: docker completion
+## setup: docker completion
 if [ -f /usr/local/bin/docker ]; then
   if command -v docker 1>/dev/null 2>&1; then
     if [ ! -L /usr/local/etc/bash_completion.d/docker ]; then
@@ -24,7 +29,7 @@ if [ -f /usr/local/bin/docker ]; then
   fi
 fi
 
-## Setup: pyenv
+## setup: pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"

@@ -26,14 +26,15 @@ curl -O https://raw.githubusercontent.com/paulbrice/dotfiles/master/README.md
 
 See Brewfile for installation list.
 
-## Setup Oh-My-Zsh
+## Setup AWSUME
 
-[https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+[https://github.com/trek10inc/awsume](https://github.com/trek10inc/awsume)
 
-``` bash
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-chsh -s /usr/local/bin/zsh
-```
+Install awsume
+`pip install awsume`
+
+**Optional** - Install plugin
+`awsume --install-plugin https://raw.githubusercontent.com/trek10inc/awsume/master/examplePlugin/console.py https://raw.githubusercontent.com/trek10inc/awsume/master/examplePlugin/console.yapsy-plugin`
 
 ### Install Solorized for iTerm2
 
@@ -111,6 +112,7 @@ Create directory structure: `mkdir -p ~/develop/go-workspace/{pkg,src,bin}`
 ```
 vagrant plugin install vagrant-aws
 ```
+
 ### Install ChefDK
 
 [https://downloads.chef.io/chefdk](https://downloads.chef.io/chefdk)
@@ -124,19 +126,4 @@ mkdir -p ~/.zsh/completion
 $ curl -L https://raw.githubusercontent.com/docker/compose/1.21.2/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
 ```
 
-### NeoVim Setup
-
-symlink .vimrc to init.vim
-
-`ln -s ~/.vimrc ~/.config/nvim/init.vim`
-
-vim-plug
-
-[https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
-```
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-plugins
-[https://github.com/ncm2/ncm2](https://github.com/ncm2/ncm2)
+### Vim Setup
