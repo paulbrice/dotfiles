@@ -1,0 +1,4 @@
+#!/bin/sh
+#P4V wrapper script - /usr/local/bin/extMerge
+
+/Applications/p4merge.app/Contents/MacOS/p4merge $*

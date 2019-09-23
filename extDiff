@@ -1,0 +1,4 @@
+#!/bin/sh
+#P4V wrapper script - /usr/local/bin/extDiff
+
+[ $# -eq 7 ] && /usr/local/bin/extMerge "$2" "$5"

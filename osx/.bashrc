@@ -3,8 +3,8 @@ HISTSIZE=5000
 HISTFILESIZE=10000
 shopt -s histappend
 
-## setup: bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
+## setup: bash completion and prompt
+if [ -f $(brew --prefix)/etc/bash_completion.d ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
