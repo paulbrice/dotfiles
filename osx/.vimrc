@@ -58,3 +58,11 @@ set showmatch
 
 " copy / paste
 set clipboard=unnamed
+
+" better indentation
+vnoremap < <gv
+vnoremap > >g
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right"
