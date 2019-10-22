@@ -32,7 +32,7 @@ export PATH="/usr/local/sbin:$PATH"
 # proxy
 export http_proxy="http://proxy.ops.tiaa-cref.org:8080"
 export https_proxy="http://proxy.ops.tiaa-cref.org:8080"
-export no_proxy="127.0.0.0,local.host,aws.tiaa-cref.org,tiaa-cref.org,vpce-03a14f15c23988eff-80nhx5d1.execute-api.us-east-1.vpce.amazonaws.com"
+export no_proxy="127.0.0.0,local.host"
 export HTTP_PROXY=$http_proxy
 export HTTPS_PROXY=$https_proxy
 export NO_PROXY=$no_proxy
