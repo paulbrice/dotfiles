@@ -11,7 +11,6 @@ HISTFILESIZE=2000
 
 # alias
 alias ll='ls -l'
-alias awsume=". awsume"
 
 # Setup Git
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
@@ -30,9 +29,10 @@ export PATH=$HOME/bin:$PATH #adding local bin for tooling
 export PATH="/usr/local/sbin:$PATH"
 
 # proxy
-export http_proxy="http://proxy.ops.tiaa-cref.org:8080"
-export https_proxy="http://proxy.ops.tiaa-cref.org:8080"
 export no_proxy="127.0.0.0,local.host"
+export http_proxy=""
+# repeats
+export https_proxy=$http_proxy
 export HTTP_PROXY=$http_proxy
 export HTTPS_PROXY=$https_proxy
 export NO_PROXY=$no_proxy
@@ -54,18 +54,6 @@ alias unset-aws=". unset-aws.sh"
 
 # Unset Proxy
 alias unset-proxy=". unset-proxy.sh"
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
 
 # Setup asdf 
 source /usr/local/opt/asdf/asdf.sh
