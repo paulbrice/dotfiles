@@ -39,7 +39,7 @@ asdf install helm 2.14.3
 asdf install helmfile 0.85.0
 asdf install kubectl 1.15.3
 asdf install nodejs 10.16.3
-asdf install python 3.7.4 2.7.15
+asdf install python 3.7.5 2.7.17
 asdf install shellcheck 0.7.0
 asdf install terraform 0.11.14
 asdf install terraform-docs 0.6.0
@@ -54,7 +54,7 @@ asdf global Helm 2.14.3
 asdf global Helmfile 0.85.0
 asdf global Kubectl 1.15.3
 asdf global nodejs 10.16.3
-asdf global Python 3.7.4 2.7.15
+asdf global Python 3.7.5 2.7.17
 asdf global shellcheck 0.7.0
 asdf global terraform 0.11.14
 asdf global terraform-docs 0.6.0
