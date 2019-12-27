@@ -13,6 +13,7 @@ asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git
 asdf plugin-add terraform-docs https://github.com/looztra/asdf-terraform-docs.git
 asdf plugin-add terraform-validator https://github.com/looztra/asdf-terraform-validator.git
 asdf plugin-add tflint https://github.com/RykHawthorn/asdf-tflint.git
+asdf plugin-add terragrunt https://github.com/lotia/asdf-terragrunt
 
 # import OpenGPG keys
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
@@ -28,6 +29,7 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 # https://github.com/segmentio/terraform-docs/releases
 # https://github.com/thazelart/terraform-validator/releases
 # https://github.com/wata727/tflint/releases
+# https://github.com/gruntwork-io/terragrunt/releases
 # https://releases.hashicorp.com/packer/
 # https://www.python.org/downloads/
 # https://github.com/koalaman/shellcheck/releases
@@ -43,6 +45,7 @@ asdf install terraform 0.11.14
 asdf install terraform-docs 0.6.0
 asdf install terraform-validator 3.1.0
 asdf install tflint 0.11.1
+asdf install terragrunt 0.21.10
 
 # set globals
 
@@ -57,6 +60,7 @@ asdf global terraform 0.11.14
 asdf global terraform-docs 0.6.0
 asdf global terraform-validator 3.1.0
 asdf global tflint 0.11.1
+asdf global terragrunt 0.21.10
 
 # current
 asdf current

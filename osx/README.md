@@ -112,9 +112,10 @@ Create directory structure: `mkdir -p ~/code/go-workspace/{pkg,src,bin}`
 
 [https://docs.docker.com/compose/completion/#install-command-completion](https://docs.docker.com/compose/completion/#install-command-completion)
 
-``` bash
-mkdir -p ~/.zsh/completion
-$ curl -L https://raw.githubusercontent.com/docker/compose/1.21.2/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
-```
 
 ### Setup Vim
+
+# Vim (~/.vim/autoload)
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
