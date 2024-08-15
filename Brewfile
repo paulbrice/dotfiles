@@ -1,0 +1,6 @@
+tap "homebrew/bundle"
+brew "asdf"
+brew "d2"
+brew "serverless"
+cask "iterm2"
+cask "visual-studio-code"
