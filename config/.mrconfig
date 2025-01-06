@@ -1,0 +1,2 @@
+[projects/dotfiles]
+checkout = git clone 'git@github.com:paulbrice/dotfiles.git' 'dotfiles'

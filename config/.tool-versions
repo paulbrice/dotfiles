@@ -1,0 +1,13 @@
+checkov latest
+hadolint latest
+nodejs latest
+opa latest
+opentofu latest
+packer latest
+python latest
+shellcheck latest
+shfmt latest
+terraform latest
+tf-summarize latest
+terraform-docs latest
+tfsec latest
